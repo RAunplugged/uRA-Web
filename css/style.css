@@ -1,0 +1,128 @@
+/*custom css*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+
+body{
+	background-image: url('../res/back_ground.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin: 0 0 0 0;
+}
+
+
+.c-body{
+    background-color: rgba(0,0,0,0.0);
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+}
+
+.main-body .row{
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+}
+
+.main-body .col-sm-2:not(:first-child):not(:last-child){
+	width: 8%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.main-body .col-sm-2:last-child .logo{
+	width: 90px;
+	padding: 10px;
+	background: #fff;
+	border-radius: 5px;
+}
+
+.main-body .logo{
+	height: 35px;
+	padding: 0px;
+	margin: 0 auto;
+}
+
+.footer{
+	padding: 10px;
+	width: 60%;
+    margin: 0 auto;
+    margin-top:15px;
+	border-top: 1px solid #333;
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 320px) and (max-width: 767.98px){
+	.main-body{
+		margin-top: 20%;
+	}
+
+	.main-body .row{
+		display: initial;
+	}
+	
+	.main-body .col-sm-2:not(:first-child):not(:last-child){
+		width: auto;
+		padding: 0px;
+		margin: 20px;
+	}
+
+	.main-body .col-sm-2 .logo,
+	.main-body .col-sm-2:last-child{
+		width: auto;
+		margin: 0 auto;
+	}
+
+	.footer{
+		width: 100%;
+	}
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px){
+	.main-body .row{
+		margin-top: 20%;
+	}
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px){
+	.main-body .row{
+		margin-top: 60%;
+	}
+}
+
+/*Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) and (max-width: 1919.98px) {
+	.main-body .row{
+		margin-top: 50%;
+	}
+}
+
+
+/*HD large devices (HD desktops, 1920px and up)*/
+@media (min-width: 1920px){
+	.main-body .row{
+		margin-top: 67%;
+	}
+}
+
+
+/*UHD large devices (HD desktops, 2560px and up)*/
+@media (min-width: 2560px){
+	.main-body .row{
+		margin-top: 77%;
+	}
+}
